@@ -1,6 +1,6 @@
 # MagnetoElastic_Network
 
-### Project name: Psrticle dynamics simulations for magneto-elastic networks
+### Project name: Particle dynamics simulations for magneto-elastic networks with JAX
 
 ### Project type: Research project
 
