@@ -497,7 +497,7 @@ def Force_mag_steric_repulsion_map(pair, magr, pos, eps=3.0e-2):
     # LJ 50-49
     # zero-energy position
     sig = cridis*49/50 # in cm
-    F_rep=jnp.where(distemp < cridis, 50*(50/49)**49*eps*(-sig**50/distemp**51+sig**49/distemp**50)*100*n12, 0*n12)
+    F_rep=jnp.where(distemp < cridis, 50*(50/49)**49*eps*(-50*sig**50/distemp**51+49*sig**49/distemp**50)*100*n12, 0*n12)
     
     tempspace = jnp.zeros([magnum,3])
     tempspace = tempspace.at[pair[0]].set(-F_rep)
